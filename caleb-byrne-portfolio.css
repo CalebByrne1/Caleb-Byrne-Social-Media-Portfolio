@@ -924,6 +924,10 @@
   @media (max-width: 580px) {
     .provide-grid { grid-template-columns: 1fr; }
     h1 { font-size: 2.7rem; }
+    .hero-bg-word {
+      font-size: 4.15rem;
+      letter-spacing: -0.055em;
+    }
     .nav-toggle { display: inline-flex; }
     .nav-links {
       position: absolute;
@@ -958,6 +962,37 @@
     .work-intro,
     .beats-intro {
       padding-left: 1rem;
+    }
+    .stats-row {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .s-cell {
+      min-width: 0;
+      padding: 1.45rem 0.7rem;
+    }
+    .s-num {
+      font-size: 1.85rem;
+      letter-spacing: -0.02em;
+    }
+    .s-lbl {
+      font-size: 0.66rem;
+      line-height: 1.35;
+    }
+    .pl-head,
+    .ch-label,
+    .pl-body {
+      padding-left: 1.05rem;
+      padding-right: 1.05rem;
+    }
+    .pl-row {
+      gap: 0.7rem;
+    }
+    .pl-k,
+    .pl-v {
+      min-width: 0;
+    }
+    .pl-v {
+      overflow-wrap: anywhere;
     }
     .c-email-card {
       min-width: min(280px, calc(100vw - 3rem));
