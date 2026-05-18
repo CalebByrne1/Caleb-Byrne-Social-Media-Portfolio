@@ -653,12 +653,20 @@
     color: var(--fire);
     text-decoration: none;
   }
-  .w-brand-link {
+  .w-meta .w-brand-link,
+  .w-meta .w-brand-link:link,
+  .w-meta .w-brand-link:visited {
     color: var(--fire);
-    text-decoration: none;
-  }
-  .w-brand-link:hover {
+    font-weight: 500;
     text-decoration: underline;
+    text-decoration-color: rgba(224,92,32,0.55);
+    text-underline-offset: 0.2em;
+    text-decoration-thickness: 1px;
+  }
+  .w-meta .w-brand-link:hover,
+  .w-meta .w-brand-link:focus-visible {
+    color: #ff8a4a;
+    text-decoration-color: currentColor;
   }
   .w-action:hover {
     text-decoration: underline;
