@@ -213,17 +213,14 @@
         </div>
       </article>
       <article class="w-card w-card-media">
-        <button
-          class="w-media w-media-video"
-          type="button"
-          data-tiktok-embed
-          data-src="https://www.tiktok.com/player/v1/7506598535257705758?autoplay=1&description=0&music_info=0&rel=0"
-          data-link="https://www.tiktok.com/@byrnecaleb/video/7506598535257705758"
-          data-title="NFC Sticker Product Demo">
-          <span class="w-play-badge">TikTok</span>
-          <span class="w-play-icon">Play</span>
-          <span class="w-play-note">Click to watch</span>
-        </button>
+        <div class="w-media">
+          <iframe
+            src="https://www.tiktok.com/player/v1/7506598535257705758?autoplay=0&description=0&music_info=0&rel=0"
+            title="NFC Sticker Product Demo"
+            loading="lazy"
+            allowfullscreen>
+          </iframe>
+        </div>
         <div class="w-copy">
           <div class="w-title">NFC Sticker Product Demo</div>
           <div class="w-meta">UGC · Product use case</div>
@@ -232,17 +229,14 @@
         </div>
       </article>
       <article class="w-card w-card-media">
-        <button
-          class="w-media w-media-video"
-          type="button"
-          data-tiktok-embed
-          data-src="https://www.tiktok.com/player/v1/7506650069597310238?autoplay=1&description=0&music_info=0&rel=0"
-          data-link="https://www.tiktok.com/@byrnecaleb/video/7506650069597310238"
-          data-title="Reply-to-Comment Video">
-          <span class="w-play-badge">TikTok</span>
-          <span class="w-play-icon">Play</span>
-          <span class="w-play-note">Click to watch</span>
-        </button>
+        <div class="w-media">
+          <iframe
+            src="https://www.tiktok.com/player/v1/7506650069597310238?autoplay=0&description=0&music_info=0&rel=0"
+            title="Reply-to-Comment Video"
+            loading="lazy"
+            allowfullscreen>
+          </iframe>
+        </div>
         <div class="w-copy">
           <div class="w-title">Reply-to-Comment Video</div>
           <div class="w-meta">Community engagement format</div>
@@ -529,45 +523,9 @@
   function switchTab(btn, id) {
     document.querySelectorAll('.tab-btn').forEach(t => t.classList.remove('on'));
     document.querySelectorAll('.panel').forEach(p => p.classList.remove('on'));
-    if (id !== 'tiktoks') resetTikTokEmbeds();
     btn.classList.add('on');
     document.getElementById(id).classList.add('on');
   }
-
-  function createTikTokPreview(button) {
-    button.innerHTML = `
-      <span class="w-play-badge">TikTok</span>
-      <span class="w-play-icon">Play</span>
-      <span class="w-play-note">Click to watch</span>
-      <span class="w-play-fallback">If the embed is blocked, use the Open on TikTok link below.</span>
-    `;
-  }
-
-  function resetTikTokEmbeds(activeButton) {
-    document.querySelectorAll('[data-tiktok-embed]').forEach(button => {
-      if (button !== activeButton && button.classList.contains('is-playing')) {
-        button.classList.remove('is-playing');
-        createTikTokPreview(button);
-      }
-    });
-  }
-
-  document.querySelectorAll('[data-tiktok-embed]').forEach(button => {
-    createTikTokPreview(button);
-    button.addEventListener('click', () => {
-      if (button.classList.contains('is-playing')) return;
-      resetTikTokEmbeds(button);
-      button.classList.add('is-playing');
-      button.innerHTML = `
-        <iframe
-          src="${button.dataset.src}"
-          title="${button.dataset.title}"
-          loading="lazy"
-          allowfullscreen>
-        </iframe>
-      `;
-    });
-  });
 
   const io = new IntersectionObserver((entries) => {
     entries.forEach((e, i) => {
