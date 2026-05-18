@@ -653,6 +653,13 @@
     color: var(--fire);
     text-decoration: none;
   }
+  .w-brand-link {
+    color: var(--fire);
+    text-decoration: none;
+  }
+  .w-brand-link:hover {
+    text-decoration: underline;
+  }
   .w-action:hover {
     text-decoration: underline;
   }
