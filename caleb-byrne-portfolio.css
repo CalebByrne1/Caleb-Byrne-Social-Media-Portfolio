@@ -592,7 +592,7 @@
   .w-card { background: var(--bg); padding: 2.1rem 1.5rem; display: flex; flex-direction: column; justify-content: flex-end; gap: 0.65rem; min-height: 160px; transition: background 0.2s; }
   .w-card:hover { background: #111; }
   .w-grid-media {
-    grid-template-columns: repeat(auto-fit, minmax(260px, 340px));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 430px));
     justify-content: center;
     align-items: start;
     gap: 1.25rem;
@@ -1091,7 +1091,7 @@
     .work-stack { gap: 2.35rem; }
     .work-group + .work-group { padding-top: 2.35rem; }
     .w-grid-media {
-      grid-template-columns: minmax(0, min(100%, 340px));
+      grid-template-columns: 1fr;
     }
     .work-intro,
     .beats-intro {
