@@ -506,6 +506,24 @@
   .pl-name { font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 1rem; letter-spacing: -0.01em; color: var(--ink); }
   .pl-sub { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--muted); letter-spacing: 0.05em; margin-top: 0.25rem; }
   .ch-label { padding: 0.95rem 1.7rem; background: var(--fire-dim); border-bottom: 1px solid var(--rule); font-family: 'DM Mono', monospace; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--fire); }
+  .account-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .account-group {
+    padding: 1.15rem 1.7rem 1.25rem;
+  }
+  .account-group + .account-group {
+    border-left: 1px solid var(--rule);
+  }
+  .account-label {
+    margin-bottom: 0.45rem;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--fire);
+  }
   .pl-body { padding: 1.15rem 1.7rem 1.25rem; }
   .pl-row {
     display: flex;
@@ -1114,9 +1132,17 @@
     }
     .pl-head,
     .ch-label,
-    .pl-body {
+    .pl-body,
+    .account-group {
       padding-left: 1.05rem;
       padding-right: 1.05rem;
+    }
+    .account-grid {
+      grid-template-columns: 1fr;
+    }
+    .account-group + .account-group {
+      border-left: none;
+      border-top: 1px solid var(--rule);
     }
     .pl-row {
       gap: 0.7rem;
