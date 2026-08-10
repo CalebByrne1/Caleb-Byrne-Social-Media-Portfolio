@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#F2732A"/>
+  <text x="32" y="33" font-family="DejaVu Sans" font-weight="bold" font-size="32"
+        fill="#FFFFFF" text-anchor="middle" dominant-baseline="central"
+        letter-spacing="-1.5">CB</text>
+</svg>
