@@ -626,6 +626,50 @@
   .pl-v a:hover { text-decoration: underline; }
   .pl-divider { border-top: 1px solid var(--rule); }
 
+  /* ─── CASE STUDIES ─── */
+  .cs-intro { max-width: 46rem; color: var(--muted); margin-bottom: 2.5rem; }
+  .cs-list { display: grid; gap: 1.75rem; }
+  .cs-card {
+    border: 1px solid var(--rule);
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0)), var(--bg);
+    overflow: hidden;
+  }
+  .cs-head { padding: 1.7rem 1.9rem 1.5rem; border-bottom: 1px solid var(--rule); background: rgba(255,255,255,0.02); }
+  .cs-kicker { font-family: 'DM Mono', monospace; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--fire); margin-bottom: 0.6rem; }
+  .cs-title { font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: clamp(1.15rem, 2vw, 1.5rem); letter-spacing: -0.01em; line-height: 1.3; color: var(--ink); text-wrap: balance; }
+  .cs-sum { color: var(--muted); margin-top: 0.6rem; max-width: 48rem; }
+  .cs-metrics { display: grid; grid-template-columns: repeat(4, 1fr); border-bottom: 1px solid var(--rule); }
+  .cs-metric { padding: 1.4rem 1.9rem; border-right: 1px solid var(--rule); }
+  .cs-metric:last-child { border-right: none; }
+  .cs-num { font-family: 'Unbounded', sans-serif; font-weight: 900; font-size: clamp(1.4rem, 2.4vw, 2rem); color: var(--fire); line-height: 1.1; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+  .cs-lbl { font-family: 'DM Mono', monospace; font-size: 0.7rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin-top: 0.45rem; line-height: 1.4; }
+  .cs-body { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; padding: 1.7rem 1.9rem; }
+  .cs-h { font-family: 'DM Mono', monospace; font-size: 0.74rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem; }
+  .cs-body p { font-size: 0.92rem; line-height: 1.7; color: var(--ink); }
+  .cs-table { border-top: 1px solid var(--rule); padding: 0.6rem 1.9rem 1rem; }
+  .cs-row { display: grid; grid-template-columns: 1fr auto 6rem; gap: 1.25rem; padding: 0.6rem 0; border-bottom: 1px solid var(--rule); font-size: 0.88rem; }
+  .cs-row-4 { grid-template-columns: 1fr 5.5rem 5.5rem 8.5rem; }
+  .cs-row:last-child { border-bottom: none; }
+  .cs-row span:nth-child(n+2) { font-family: 'DM Mono', monospace; font-size: 0.8rem; color: var(--muted); text-align: right; font-variant-numeric: tabular-nums; }
+  .cs-row-head span, .cs-row-head span:nth-child(n+2) { font-family: 'DM Mono', monospace; font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--soft); }
+  .cs-foot { border-top: 1px solid var(--rule); padding: 1rem 1.9rem 1.2rem; }
+  .cs-source { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--soft); margin-top: 1.25rem; }
+
+  @media (max-width: 960px) {
+    .cs-metrics { grid-template-columns: 1fr 1fr; }
+    .cs-metric:nth-child(2n) { border-right: none; }
+    .cs-metric:nth-child(-n+2) { border-bottom: 1px solid var(--rule); }
+    .cs-body { grid-template-columns: 1fr; gap: 1.4rem; }
+  }
+  @media (max-width: 580px) {
+    .cs-head, .cs-metric, .cs-body, .cs-table, .cs-foot { padding-left: 1.05rem; padding-right: 1.05rem; }
+    .cs-row { grid-template-columns: 1fr auto; gap: 0.3rem 0.8rem; }
+    .cs-row span:first-child { grid-column: 1 / -1; }
+    .cs-row span:nth-child(2) { text-align: left; }
+    .cs-row-4 { grid-template-columns: 1fr 1fr 1fr; }
+    .cs-row-4 span:nth-child(n+2) { text-align: left; }
+  }
+
   /* ─── WORK ─── */
   .work-sec { background: var(--dim); border-top: 1px solid var(--rule); }
   .work-head {
