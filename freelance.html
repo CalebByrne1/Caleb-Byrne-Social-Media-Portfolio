@@ -6,7 +6,7 @@
 <title>Caleb Byrne — Freelance Video &amp; Content</title>
 <meta name="description" content="Caleb Byrne is a digital content producer who handles the whole chain — concept, script, filming, editing, and original music. 465K+ all-time YouTube views and a 161K-view gaming TikTok.">
 <meta name="author" content="Caleb Byrne">
-<meta name="theme-color" content="#080808">
+<meta name="theme-color" content="#070a0f">
 <link rel="canonical" href="https://calebbyrne1.github.io/Caleb-Byrne-Social-Media-Portfolio/freelance.html">
 
 <!-- Social sharing preview (LinkedIn, iMessage, Discord, X) -->
@@ -31,6 +31,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700;900&family=Inter:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="caleb-byrne-portfolio.css">
 <noscript><style>.appear { opacity: 1; transform: none; }</style></noscript>
+<script>
+  // Timeline intro plays once per browser session (or on demand with ?intro); set before first paint so the hero doesn't flash
+  try {
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches &&
+        (!sessionStorage.getItem('cb-intro-seen') || /[?&]intro\b/.test(location.search))) {
+      document.documentElement.classList.add('intro');
+      sessionStorage.setItem('cb-intro-seen', '1');
+    }
+  } catch (e) {}
+</script>
 
 <script type="application/ld+json">
 {
@@ -85,7 +95,18 @@
     <div class="hero-content">
       <!-- HERO TEXT: eyebrow, headline, intro paragraph, pills, and CTA labels -->
       <div class="hero-tag">Digital Content Production</div>
-      <h1>Content,<br><span class="ghost">Start</span> to<br><span class="fire">Finish.</span></h1>
+      <h1><span class="h1-line">Content,</span><br><span class="h1-line"><span class="ghost">Start</span> to</span><br><span class="h1-line"><span class="fire">Finish.</span></span></h1>
+      <div class="hero-intro" aria-hidden="true">
+        <div class="hi-timecode"><span>00:00:00:00</span><span>00:00:05:00</span></div>
+        <div class="hi-track">
+          <span class="hi-clip">Concept</span>
+          <span class="hi-clip">Script</span>
+          <span class="hi-clip">Film</span>
+          <span class="hi-clip">Edit</span>
+          <span class="hi-clip">Score</span>
+        </div>
+        <span class="hi-playhead"></span>
+      </div>
       <p class="hero-value">Concept. Script. Film. Edit. Score.<br>One person who handles the whole chain.</p>
       <div class="hero-pills">
         <span class="pill lit">Video Production</span>
@@ -521,7 +542,7 @@
       LinkedIn
     </a>
     <a href="https://www.youtube.com/@byrnebeatswastaken" target="_blank" rel="noopener noreferrer" class="c-link">
-      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.95C18.88 4 12 4 12 4s-6.88 0-8.59.47A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#080808"/></svg>
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.95C18.88 4 12 4 12 4s-6.88 0-8.59.47A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#070a0f"/></svg>
       YouTube
     </a>
     <a href="https://www.tiktok.com/@byrnebeatswastaken?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" class="c-link">
@@ -636,6 +657,55 @@
     });
   }, { threshold: 0.08 });
   document.querySelectorAll('.appear').forEach(el => io.observe(el));
+
+  // Hero intro: count the snapshot stats up as the card lands, and let any input skip to the finished hero
+  if (document.documentElement.classList.contains('intro')) {
+    const introStats = Array.from(document.querySelectorAll('.hero-proof-stat strong'))
+      .map((el) => {
+        const match = el.textContent.match(/^(\d+)(.*)$/);
+        return match ? { el, final: el.textContent, value: Number(match[1]), suffix: match[2] } : null;
+      })
+      .filter(Boolean);
+    const timecode = document.querySelector('.hi-timecode span');
+    const skipEvents = ['pointerdown', 'keydown', 'wheel', 'touchstart'];
+    let countFrame = null;
+    let timecodeFrame = null;
+    let countTimer = null;
+    let finishTimer = null;
+
+    function finishIntro() {
+      if (!document.documentElement.classList.contains('intro')) return;
+      document.documentElement.classList.remove('intro');
+      window.cancelAnimationFrame(countFrame);
+      window.cancelAnimationFrame(timecodeFrame);
+      window.clearTimeout(countTimer);
+      window.clearTimeout(finishTimer);
+      introStats.forEach((stat) => { stat.el.textContent = stat.final; });
+      skipEvents.forEach((type) => window.removeEventListener(type, finishIntro));
+    }
+
+    // The 1.2s playhead sweep reads as five seconds of footage at 24fps
+    function runTimecode(now, start = now) {
+      const t = Math.min((now - start) / 1200, 1);
+      const frames = Math.round(t * 5 * 24);
+      const pad = (n) => String(n).padStart(2, '0');
+      if (timecode) timecode.textContent = `00:00:${pad(Math.floor(frames / 24))}:${pad(frames % 24)}`;
+      if (t < 1) timecodeFrame = window.requestAnimationFrame((next) => runTimecode(next, start));
+    }
+
+    function countStats(now, start = now) {
+      const t = Math.min((now - start) / 800, 1);
+      const eased = 1 - Math.pow(1 - t, 3);
+      introStats.forEach((stat) => { stat.el.textContent = `${Math.round(stat.value * eased)}${stat.suffix}`; });
+      if (t < 1) countFrame = window.requestAnimationFrame((next) => countStats(next, start));
+    }
+
+    introStats.forEach((stat) => { stat.el.textContent = `0${stat.suffix}`; });
+    window.setTimeout(() => { timecodeFrame = window.requestAnimationFrame(runTimecode); }, 600);
+    countTimer = window.setTimeout(() => { countFrame = window.requestAnimationFrame(countStats); }, 1900);
+    finishTimer = window.setTimeout(finishIntro, 3000);
+    skipEvents.forEach((type) => window.addEventListener(type, finishIntro, { passive: true }));
+  }
 
   const hero = document.querySelector('.hero');
   const heroWord = document.querySelector('.hero-bg-word');
