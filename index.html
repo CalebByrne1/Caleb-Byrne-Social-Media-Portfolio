@@ -6,7 +6,7 @@
 <title>Caleb Byrne — Digital Content, Start to Finish</title>
 <meta name="description" content="Caleb Byrne is a digital content producer who handles the whole chain — concept, script, filming, editing, and original music. 465K+ all-time YouTube views and a 161K-view gaming TikTok.">
 <meta name="author" content="Caleb Byrne">
-<meta name="theme-color" content="#070a0f">
+<meta name="theme-color" content="#07090d">
 <link rel="canonical" href="https://calebbyrne1.github.io/Caleb-Byrne-Social-Media-Portfolio/">
 
 <!-- Social sharing preview (LinkedIn, iMessage, Discord, X) -->
@@ -28,19 +28,9 @@
 <link rel="apple-touch-icon" href="images/cb-favicon-pack/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700;900&family=Inter:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="caleb-byrne-portfolio.css">
-<noscript><style>.appear { opacity: 1; transform: none; }</style></noscript>
-<script>
-  // Timeline intro plays once per browser session (or on demand with ?intro); set before first paint so the hero doesn't flash
-  try {
-    if (!matchMedia('(prefers-reduced-motion: reduce)').matches &&
-        (!sessionStorage.getItem('cb-intro-seen') || /[?&]intro\b/.test(location.search))) {
-      document.documentElement.classList.add('intro');
-      sessionStorage.setItem('cb-intro-seen', '1');
-    }
-  } catch (e) {}
-</script>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<noscript><style>.reveal { opacity: 1 !important; transform: none !important; }</style></noscript>
 
 <script type="application/ld+json">
 {
@@ -63,893 +53,462 @@
 
 <a class="skip-link" href="#main">Skip to content</a>
 
-<!-- NAV -->
-<nav aria-label="Primary">
-  <a href="#top" class="nav-logo">Caleb <em>Byrne</em></a>
-  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-  <!-- NAVIGATION TEXT: site logo and nav link labels -->
-  <ul class="nav-links" id="site-nav">
-    <li><a href="#what-i-do">How I Work</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#work">Work</a></li>
-    <!-- Original Music section hidden for now.
-    <li><a href="#beats">Beats</a></li>
-    -->
-    <li><a href="#case-studies">Case Studies</a></li>
-    <li><a href="#connect">Connect</a></li>
-  </ul>
-</nav>
+<!-- PROMO BAR -->
+<a class="promo" href="#connect">
+  <span class="promo-dot" aria-hidden="true"></span>
+  Open to social media, video &amp; content roles in Sioux Falls
+  <span class="promo-arrow" aria-hidden="true">→</span>
+</a>
+
+<!-- HEADER -->
+<header class="site-header">
+  <a href="#top" class="wordmark">Caleb Byrne</a>
+  <div class="header-actions">
+    <a href="#connect" class="btn btn-solid btn-sm header-cta">Let's Talk</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+      <span class="menu-toggle-label">Menu</span>
+      <span class="menu-toggle-icon" aria-hidden="true"><span></span><span></span></span>
+    </button>
+  </div>
+</header>
+
+<!-- FULL-SCREEN MENU -->
+<div class="menu" id="site-menu" hidden>
+  <nav class="menu-nav" aria-label="Primary">
+    <ol>
+      <li><a href="#how-i-work"><span class="menu-num">01</span>How I Work</a></li>
+      <li><a href="#work"><span class="menu-num">02</span>Work</a></li>
+      <li><a href="#case-studies"><span class="menu-num">03</span>Case Studies</a></li>
+      <li><a href="#about"><span class="menu-num">04</span>About</a></li>
+      <li><a href="#connect"><span class="menu-num">05</span>Contact</a></li>
+    </ol>
+  </nav>
+  <div class="menu-side">
+    <div>
+      <div class="label">Connect</div>
+      <a href="mailto:calebbyrne2@gmail.com">calebbyrne2@gmail.com</a>
+      <a href="https://www.linkedin.com/in/calebbyrne/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://www.youtube.com/@byrnebeatswastaken" target="_blank" rel="noopener noreferrer">YouTube</a>
+      <a href="https://www.tiktok.com/@byrnebeatswastaken" target="_blank" rel="noopener noreferrer">TikTok</a>
+    </div>
+    <div>
+      <div class="label">Also</div>
+      <a href="freelance.html">Freelance Services</a>
+    </div>
+    <div>
+      <div class="label">Based In</div>
+      <span>Sioux Falls, SD</span>
+    </div>
+  </div>
+</div>
 
 <main id="main">
 
 <!-- HERO -->
 <section class="hero" id="top">
-  <div class="hero-particles" aria-hidden="true"></div>
-  <div class="hero-bg-word">CREATE</div>
+  <div class="wrap">
+    <div class="hero-top">
+      <div class="label hero-loc"><span>Digital Content Production</span><span class="slash">/</span><span>Sioux Falls, SD</span></div>
+      <div class="label hero-avail"><span class="live-dot" aria-hidden="true"></span>Open to work</div>
+    </div>
 
-  <div class="hero-layout">
-    <div class="hero-content">
-      <!-- HERO TEXT: eyebrow, headline, intro paragraph, pills, and CTA labels -->
-      <div class="hero-tag">Digital Content Production</div>
-      <h1><span class="h1-line">Content,</span><br><span class="h1-line"><span class="ghost">Start</span> to</span><br><span class="h1-line"><span class="fire">Finish.</span></span></h1>
-      <div class="hero-intro" aria-hidden="true">
-        <div class="hi-timecode"><span>00:00:00:00</span><span>00:00:05:00</span></div>
-        <div class="hi-track">
-          <span class="hi-clip">Concept</span>
-          <span class="hi-clip">Script</span>
-          <span class="hi-clip">Film</span>
-          <span class="hi-clip">Edit</span>
-          <span class="hi-clip">Score</span>
-        </div>
-        <span class="hi-playhead"></span>
-      </div>
-      <p class="hero-value">Concept. Script. Film. Edit. Score.<br>One person who handles the whole chain.</p>
-      <div class="hero-pills">
-        <span class="pill lit">Video Production</span>
-        <span class="pill lit">Original Music</span>
-        <span class="pill">DaVinci Resolve</span>
-        <span class="pill">FL Studio</span>
-      </div>
+    <div class="hero-grid">
+      <h1 class="hero-title">
+        <span class="line"><span>Content,</span></span>
+        <span class="line"><span>Start to</span></span>
+        <span class="line"><span class="accent">Finish.</span></span>
+      </h1>
+
+      <figure class="viewfinder">
+        <img src="images/Arizona Portrait 2.1.jpeg" alt="Portrait of Caleb Byrne" width="800" height="1000" fetchpriority="high">
+        <span class="vf-corner tl" aria-hidden="true"></span>
+        <span class="vf-corner tr" aria-hidden="true"></span>
+        <span class="vf-corner bl" aria-hidden="true"></span>
+        <span class="vf-corner br" aria-hidden="true"></span>
+        <span class="vf-rec" aria-hidden="true"><span class="rec-dot"></span>REC</span>
+        <span class="vf-tc" aria-hidden="true" data-timecode>00:00:00:00</span>
+        <figcaption class="vf-cap" aria-hidden="true">4K · 24FPS · ISO 400</figcaption>
+      </figure>
+    </div>
+
+    <div class="hero-bottom">
+      <p class="hero-lede">Concept. Script. Film. Edit. Score.<br><strong>One person who handles the whole chain.</strong></p>
       <div class="hero-ctas">
-        <a href="#work" class="btn btn-primary">See My Work →</a>
-        <a href="#connect" class="btn btn-ghost">Get In Touch</a>
+        <a href="#work" class="btn btn-solid">See My Work <span aria-hidden="true">→</span></a>
+        <a href="#connect" class="btn btn-line">Get In Touch</a>
       </div>
     </div>
 
-    <!-- HERO PROOF TEXT: right-side creator snapshot stats -->
-    <aside class="hero-proof appear">
-      <div class="hero-proof-label">Creator Snapshot</div>
-      <div class="hero-proof-grid">
-        <div class="hero-proof-stat">
-          <strong>465K+</strong>
-          <span>All-time YouTube views</span>
-        </div>
-        <div class="hero-proof-stat">
-          <strong>100K+</strong>
-          <span>TikTok views this year</span>
-        </div>
-        <div class="hero-proof-stat">
-          <strong>161K</strong>
-          <span>Top Gaming TikTok (2023)</span>
-        </div>
-        <div class="hero-proof-stat">
-          <strong>580+</strong>
-          <span>Videos published, YouTube + TikTok</span>
-        </div>
+    <!-- Editing-timeline strip: playhead sweeps the five stages on load -->
+    <div class="timeline" aria-hidden="true">
+      <div class="tl-ruler"><span>00:00</span><span>00:01</span><span>00:02</span><span>00:03</span><span>00:04</span><span>00:05</span></div>
+      <div class="tl-track">
+        <span class="tl-clip">Concept</span>
+        <span class="tl-clip">Script</span>
+        <span class="tl-clip">Film</span>
+        <span class="tl-clip">Edit</span>
+        <span class="tl-clip">Score</span>
       </div>
-      <p class="hero-proof-note">Built across YouTube, TikTok, gaming content, tutorials, product demos, and beat production.</p>
-    </aside>
+      <span class="tl-playhead"></span>
+    </div>
   </div>
- </section>
+</section>
 
-<div class="rule"></div>
+<!-- TICKER -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>Concept</span><i>✦</i><span>Script</span><i>✦</i><span>Film</span><i>✦</i><span>Edit</span><i>✦</i><span>Score</span><i>✦</i><span>Publish</span><i>✦</i>
+    <span>Concept</span><i>✦</i><span>Script</span><i>✦</i><span>Film</span><i>✦</i><span>Edit</span><i>✦</i><span>Score</span><i>✦</i><span>Publish</span><i>✦</i>
+  </div>
+</div>
+
+<!-- STATS -->
+<section class="stats" aria-label="Creator snapshot">
+  <div class="wrap stats-grid">
+    <div class="stat reveal"><div class="stat-num" data-count="465" data-suffix="K+">465K+</div><div class="stat-lbl">All-time YouTube views across two channels</div></div>
+    <div class="stat reveal"><div class="stat-num" data-count="3000" data-suffix="+">3,000+</div><div class="stat-lbl">Hours of YouTube watch time</div></div>
+    <div class="stat reveal"><div class="stat-num" data-count="161" data-suffix="K">161K</div><div class="stat-lbl">Views on my best single TikTok (gaming, 2023)</div></div>
+    <div class="stat reveal"><div class="stat-num" data-count="580" data-suffix="+">580+</div><div class="stat-lbl">Videos published across YouTube &amp; TikTok</div></div>
+  </div>
+  <div class="wrap tools">
+    <div class="label">Built In</div>
+    <ul class="tools-list">
+      <li><img src="images/DaVinci_Resolve_Studio.png" alt="" width="40" height="40" loading="lazy" decoding="async">DaVinci Resolve</li>
+      <li><img src="images/fl studio logo.png" alt="" width="40" height="40" loading="lazy" decoding="async">FL Studio</li>
+      <li><img src="images/OBS_Studio_Logo.svg.png" alt="" width="40" height="40" loading="lazy" decoding="async">OBS Studio</li>
+      <li><img src="images/The_GIMP_icon_-_gnome.svg.png" alt="" width="40" height="40" loading="lazy" decoding="async">GIMP</li>
+      <li><img src="images/Canva_logo.svg" alt="" width="40" height="40" loading="lazy" decoding="async">Canva</li>
+    </ul>
+  </div>
+</section>
 
 <!-- HOW I WORK -->
-<section id="what-i-do">
-  <!-- HOW I WORK TEXT: section label and heading -->
-  <div class="s-tag">How I Work</div>
-  <h2>Any Stage.<br>Or All of Them.</h2>
-  <div class="provide-grid appear">
-    <!-- HOW I WORK TEXT: stage card titles and descriptions -->
-    <div class="p-card">
-      <div class="p-icon" aria-hidden="true">💡</div>
-      <div class="p-title">Concept</div>
-      <div class="p-desc">Hooks, angles, and formats chosen to create the best video for the job.</div>
+<section class="sec sec-light" id="how-i-work">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="label">01 — How I Work</div>
+      <h2 class="display">Any Stage.<br>Or All of Them.</h2>
+      <p class="sec-intro">Plug me into one part of the team's workflow — scripting, shooting, or editing — or take a piece from first idea to a scored, publish-ready cut.</p>
     </div>
-    <div class="p-card">
-      <div class="p-icon" aria-hidden="true">✍️</div>
-      <div class="p-title">Script</div>
-      <div class="p-desc">Scripts that are engaging to increase retention rate and give the viewer value immediately.</div>
-    </div>
-    <div class="p-card">
-      <div class="p-icon" aria-hidden="true">🎬</div>
-      <div class="p-title">Filming</div>
-      <div class="p-desc">Camera, lighting, OBS, audio — video and audio quality matter too much to skimp on.</div>
-    </div>
-    <div class="p-card">
-      <div class="p-icon" aria-hidden="true">🎞️</div>
-      <div class="p-title">Editing</div>
-      <div class="p-desc">Pacing, flow, comedic timing, and clean final cuts — all handled in DaVinci Resolve.</div>
-    </div>
-    <div class="p-card">
-      <div class="p-icon" aria-hidden="true">🎵</div>
-      <div class="p-title">Music</div>
-      <div class="p-desc">With my music production skills, I am capable of scoring videos if stock music is not desired.</div>
-    </div>
-  </div>
-  <div class="pipeline-bar appear">
-    <!-- PIPELINE TEXT: delivery blurb and animated step labels -->
-    <div class="pipeline-text">
-      <strong>I can own any stage, or all of them</strong>
-      <p>Plug me into one part of the team's workflow — scripting, shooting, or editing — or take a piece from first idea to a scored, publish-ready cut.</p>
-    </div>
-    <div class="pipeline-steps">
-      <span class="ps">Concept</span><span class="pa">→</span>
-      <span class="ps">Script</span><span class="pa">→</span>
-      <span class="ps">Film</span><span class="pa">→</span>
-      <span class="ps">Edit</span><span class="pa">→</span>
-      <span class="ps">Score</span><span class="pa">→</span>
-      <span class="ps">Publish</span>
-    </div>
+
+    <ol class="services">
+      <li class="service reveal">
+        <span class="svc-num">01</span>
+        <div class="svc-name"><span class="svc-eyebrow">Find the Angle</span><h3>Concept</h3></div>
+        <p>Hooks, angles, and formats chosen to create the best video for the job.</p>
+      </li>
+      <li class="service reveal">
+        <span class="svc-num">02</span>
+        <div class="svc-name"><span class="svc-eyebrow">Value Up Front</span><h3>Script</h3></div>
+        <p>Scripts that are engaging to increase retention rate and give the viewer value immediately.</p>
+      </li>
+      <li class="service reveal">
+        <span class="svc-num">03</span>
+        <div class="svc-name"><span class="svc-eyebrow">Clean Capture</span><h3>Filming</h3></div>
+        <p>Camera, lighting, OBS, audio — video and audio quality matter too much to skimp on.</p>
+      </li>
+      <li class="service reveal">
+        <span class="svc-num">04</span>
+        <div class="svc-name"><span class="svc-eyebrow">Pacing &amp; Timing</span><h3>Editing</h3></div>
+        <p>Pacing, flow, comedic timing, and clean final cuts — all handled in DaVinci Resolve.</p>
+      </li>
+      <li class="service reveal">
+        <span class="svc-num">05</span>
+        <div class="svc-name"><span class="svc-eyebrow">Original Score</span><h3>Music</h3></div>
+        <p>With my music production skills, I am capable of scoring videos if stock music is not desired.</p>
+      </li>
+    </ol>
   </div>
 </section>
-
-<div class="rule"></div>
-
-<!-- ABOUT -->
-<section class="about-sec" id="about">
-  <div class="about-grid">
-    <div>
-      <!-- ABOUT TEXT: section label and heading -->
-      <div class="s-tag">About</div>
-      <h2>Builder.<br>Creator.<br>Obsessive.</h2>
-    </div>
-    <div class="appear">
-      <div class="about-intro">
-        <div class="about-photo-wrap">
-          <img src="images/Arizona Portrait 2.1.jpeg" alt="Portrait of Caleb Byrne" width="800" height="1000" loading="lazy" decoding="async">
-        </div>
-        <div class="about-body">
-          <!-- ABOUT TEXT: main bio paragraphs -->
-          <p>I'm a creator who loves making things. Whether that's producing a beat in FL Studio, editing a video in DaVinci Resolve, or building a piece of software — creating is where I spend most of my time.</p>
-          <p>My content spans tutorials, product demos, and talking head videos about topics I'm genuinely into. I have 465K+ all-time views across two YouTube channels, where I've published 56 full-length videos alongside Shorts, and 100K+ TikTok views in the past year across two accounts.</p>
-          <p>I have an Associate's degree in Software Development, and I'm pursuing a Bachelor of Science (B.S.) in Digital Content Creation at Dakota State University — which means I think about content technically as well as creatively. I understand hooks, retention curves, and platform analytics, not just aesthetics.</p>
-          <p>Outside of work and school: I make my own social media content, make beats, read books, play video games (anybody else ready for GTA VI?), and occasionally do photography.</p>
-        </div>
-      </div>
-      <div class="tools-grid">
-        <!-- TOOLS TEXT: tool names and categories -->
-        <div class="t-card">
-          <img src="images/DaVinci_Resolve_Studio.png" alt="" width="64" height="64" loading="lazy" decoding="async">
-          <div><div class="t-name">DaVinci Resolve</div><div class="t-cat">Video Editing</div></div>
-        </div>
-        <div class="t-card">
-          <img src="images/fl studio logo.png" alt="" width="64" height="64" loading="lazy" decoding="async">
-          <div><div class="t-name">FL Studio</div><div class="t-cat">Music Production</div></div>
-        </div>
-        <div class="t-card">
-          <img src="images/The_GIMP_icon_-_gnome.svg.png" alt="" width="64" height="64" loading="lazy" decoding="async">
-          <div><div class="t-name">GIMP</div><div class="t-cat">Design</div></div>
-        </div>
-        <div class="t-card">
-          <img src="images/Canva_logo.svg" alt="" width="64" height="64" loading="lazy" decoding="async">
-          <div><div class="t-name">Canva</div><div class="t-cat">Design</div></div>
-        </div>
-        <div class="t-card">
-          <img src="images/OBS_Studio_Logo.svg.png" alt="" width="64" height="64" loading="lazy" decoding="async">
-          <div><div class="t-name">OBS Studio</div><div class="t-cat">Recording</div></div>
-        </div>
-        <div class="t-card">
-          <div class="t-icon" aria-hidden="true">📷</div>
-          <div><div class="t-name">Camera + Lighting</div><div class="t-cat">Production</div></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="rule"></div>
 
 <!-- WORK -->
-<section class="work-sec" id="work">
-  <!-- WORK TEXT: section label, heading, and group labels -->
-  <div class="work-head">
-    <div>
-      <div class="s-tag">Selected Work</div>
-      <h2>What I've Made</h2>
-    </div>
-    <!-- WORK INTRO TEXT: right-side section description -->
-    <!-- Thumbnail section hidden for now.
-    <p class="work-intro">A focused selection of TikTok videos and YouTube thumbnails that shows how I approach hooks, packaging, and platform-first creative.</p>
-    -->
-    <p class="work-intro">A focused selection of short-form videos that shows how I approach hooks, pacing, and platform-first creative.</p>
-  </div>
-  <div class="work-stack">
-    <div class="work-group appear">
-      <div class="work-group-head">
-        <div>
-          <div class="work-kicker">Client Work</div>
-          <h3>Lawrence &amp; Schiller UGC</h3>
-        </div>
-        <p>Freelance short-form pieces built from a client brief.</p>
+<section class="sec" id="work">
+  <div class="wrap">
+    <div class="sec-head sec-head-split">
+      <div>
+        <div class="label">02 — Selected Work</div>
+        <h2 class="display">What I've Made</h2>
       </div>
-      <div class="w-grid w-grid-media">
-      <!-- CLIENT WORK CARD TEXT: titles, meta lines, and descriptions -->
-      <article class="w-card w-card-media">
-        <div class="w-media w-media-local">
-          <video controls preload="metadata" playsinline title="Let's Be Clear UGC Brief">
-            <source src="videos/lawrence-schiller-ugc-01.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="w-copy">
-          <div class="w-title">Let's Be Clear UGC Brief</div>
-          <div class="w-meta"><a class="w-brand-link" href="https://l-s.com/" target="_blank" rel="noopener noreferrer">Lawrence &amp; Schiller</a> &middot; Freelance UGC brief</div>
-          <div class="w-desc">Short-form UGC piece created on behalf of Lawrence &amp; Schiller, focused on clear message delivery, while keeping the target audience in mind.</div>
-        </div>
-      </article>
-      <article class="w-card w-card-media">
-        <div class="w-media w-media-local">
-          <video controls preload="metadata" playsinline title="Mexi Rolls Review">
-            <source src="videos/lawrence-schiller-ugc-02.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="w-copy">
-          <div class="w-title">Mexi Rolls Review</div>
-          <div class="w-meta"><a class="w-brand-link" href="https://l-s.com/" target="_blank" rel="noopener noreferrer">Lawrence &amp; Schiller</a> &middot; Freelance UGC review</div>
-          <div class="w-desc">Review-style UGC video built around quick product impressions, pacing, and a casual on-camera feel. Created on behalf of Lawrence &amp; Schiller.</div>
-        </div>
-      </article>
+      <p class="sec-intro">A focused selection of short-form videos that shows how I approach hooks, pacing, and platform-first creative.</p>
+    </div>
+
+    <div class="work-group">
+      <div class="work-cat">
+        <span class="label">Client Work</span>
+        <span class="work-cat-line" aria-hidden="true"></span>
+        <span class="work-cat-note">Freelance short-form pieces built from a client brief.</span>
+      </div>
+      <div class="work-grid work-grid-2">
+        <article class="work-card reveal">
+          <div class="work-media">
+            <video controls preload="metadata" playsinline title="Let's Be Clear UGC Brief">
+              <source src="videos/lawrence-schiller-ugc-01.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="work-copy">
+            <h3>Let's Be Clear <span class="work-type">(UGC Brief)</span></h3>
+            <p>Short-form UGC piece focused on clear message delivery, while keeping the target audience in mind.</p>
+            <p class="work-credit">For <a href="https://l-s.com/" target="_blank" rel="noopener noreferrer">Lawrence &amp; Schiller</a></p>
+          </div>
+        </article>
+        <article class="work-card reveal">
+          <div class="work-media">
+            <video controls preload="metadata" playsinline title="Mexi Rolls Review">
+              <source src="videos/lawrence-schiller-ugc-02.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="work-copy">
+            <h3>Mexi Rolls <span class="work-type">(UGC Review)</span></h3>
+            <p>Review-style UGC video built around quick product impressions, pacing, and a casual on-camera feel.</p>
+            <p class="work-credit">For <a href="https://l-s.com/" target="_blank" rel="noopener noreferrer">Lawrence &amp; Schiller</a></p>
+          </div>
+        </article>
       </div>
     </div>
-    <div class="work-group appear">
-      <div class="work-group-head">
-        <div>
-          <div class="work-kicker">Personal Content</div>
-          <h3>Short-Form Platform Work</h3>
-        </div>
-        <p>Personal videos that show how I test hooks, explain ideas quickly, and turn audience interaction into platform-native content.</p>
+
+    <div class="work-group">
+      <div class="work-cat">
+        <span class="label">Personal Content</span>
+        <span class="work-cat-line" aria-hidden="true"></span>
+        <span class="work-cat-note">How I test hooks, explain ideas quickly, and turn audience interaction into content.</span>
       </div>
-      <div class="w-grid w-grid-media">
-      <!-- PERSONAL CONTENT CARD TEXT: titles, meta lines, descriptions, and fallback links -->
-      <article class="w-card w-card-media">
-        <div class="w-media">
-          <iframe
-            src="https://www.tiktok.com/player/v1/7506598535257705758?autoplay=0&description=0&music_info=0&rel=0"
-            title="NFC Sticker Product Demo"
-            loading="lazy"
-            allowfullscreen>
-          </iframe>
-        </div>
-        <div class="w-copy">
-          <div class="w-title">NFC Sticker Product Demo</div>
-          <div class="w-meta">Product use case</div>
-          <div class="w-desc">A product demo that shows the use case in seconds. 8,999 views and 42 shares, my most-shared post, with 77.3% of views coming from the For You feed.</div>
-          <a class="w-action" href="https://www.tiktok.com/@byrnecaleb/video/7506598535257705758" target="_blank" rel="noopener noreferrer">Open on TikTok</a>
-        </div>
-      </article>
-      <article class="w-card w-card-media">
-        <div class="w-media">
-          <iframe
-            src="https://www.tiktok.com/player/v1/7506650069597310238?autoplay=0&description=0&music_info=0&rel=0"
-            title="Reply-to-Comment Video"
-            loading="lazy"
-            allowfullscreen>
-          </iframe>
-        </div>
-        <div class="w-copy">
-          <div class="w-title">Reply-to-Comment Video</div>
-          <div class="w-meta">Community engagement format</div>
-          <div class="w-desc">Designed around audience interaction so the comment becomes the hook and the answer becomes the content.</div>
-          <a class="w-action" href="https://www.tiktok.com/@byrnecaleb/video/7506650069597310238" target="_blank" rel="noopener noreferrer">Open on TikTok</a>
-        </div>
-      </article>
-      <article class="w-card w-card-media">
-        <div class="w-media">
-          <iframe
-            src="https://www.tiktok.com/player/v1/7638404552861043998?autoplay=0&description=0&music_info=0&rel=0"
-            title="Music Production Tutorial"
-            loading="lazy"
-            allowfullscreen>
-          </iframe>
-        </div>
-        <div class="w-copy">
-          <div class="w-title">Music Production Tutorial</div>
-          <div class="w-meta">Short-form content example</div>
-          <div class="w-desc">I created this video to clearly explain a music production technique.</div>
-          <a class="w-action" href="https://www.tiktok.com/@byrnecaleb/video/7638404552861043998?lang=en" target="_blank" rel="noopener noreferrer">Open on TikTok</a>
-        </div>
-      </article>
+      <div class="work-grid work-grid-3">
+        <article class="work-card reveal">
+          <div class="work-media">
+            <iframe src="https://www.tiktok.com/player/v1/7506598535257705758?autoplay=0&description=0&music_info=0&rel=0" title="NFC Sticker Product Demo" loading="lazy" allowfullscreen></iframe>
+          </div>
+          <div class="work-copy">
+            <h3>NFC Sticker <span class="work-type">(Product Demo)</span></h3>
+            <p>A product demo that shows the use case in seconds. 8,999 views and 42 shares, my most-shared post, with 77.3% of views coming from the For You feed.</p>
+            <a class="link-arrow" href="https://www.tiktok.com/@byrnecaleb/video/7506598535257705758" target="_blank" rel="noopener noreferrer">Open on TikTok</a>
+          </div>
+        </article>
+        <article class="work-card reveal">
+          <div class="work-media">
+            <iframe src="https://www.tiktok.com/player/v1/7506650069597310238?autoplay=0&description=0&music_info=0&rel=0" title="Reply-to-Comment Video" loading="lazy" allowfullscreen></iframe>
+          </div>
+          <div class="work-copy">
+            <h3>Reply-to-Comment <span class="work-type">(Community)</span></h3>
+            <p>Designed around audience interaction so the comment becomes the hook and the answer becomes the content.</p>
+            <a class="link-arrow" href="https://www.tiktok.com/@byrnecaleb/video/7506650069597310238" target="_blank" rel="noopener noreferrer">Open on TikTok</a>
+          </div>
+        </article>
+        <article class="work-card reveal">
+          <div class="work-media">
+            <iframe src="https://www.tiktok.com/player/v1/7638404552861043998?autoplay=0&description=0&music_info=0&rel=0" title="Music Production Tutorial" loading="lazy" allowfullscreen></iframe>
+          </div>
+          <div class="work-copy">
+            <h3>Music Production <span class="work-type">(Tutorial)</span></h3>
+            <p>I created this video to clearly explain a music production technique.</p>
+            <a class="link-arrow" href="https://www.tiktok.com/@byrnecaleb/video/7638404552861043998?lang=en" target="_blank" rel="noopener noreferrer">Open on TikTok</a>
+          </div>
+        </article>
+      </div>
     </div>
   </div>
-  </div>
-  <!-- Thumbnail section hidden for now.
-  <div id="thumbs" class="panel">
-    <div class="w-grid w-grid-media">
-      <article class="w-card w-card-media">
-        <div class="w-media w-media-thumb">
-          <img src="images/thumbnail idea 1 (better color).png" alt="Gaming Video Thumbnail">
-        </div>
-        <div class="w-copy">
-          <div class="w-title">Gaming Video Thumbnail</div>
-          <div class="w-meta">Gaming · reaction-style thumbnail</div>
-          <div class="w-desc">Built around expression - gaming video style.</div>
-        </div>
-      </article>
-      <article class="w-card w-card-media">
-        <div class="w-media w-media-thumb">
-          <img src="images/thumbnail idea 1.png" alt="Character Gameplay Video thumbnail">
-        </div>
-        <div class="w-copy">
-          <div class="w-title">Character Gameplay Video</div>
-          <div class="w-meta">Gameplay · character-forward framing</div>
-          <div class="w-desc">Composed to center the subject to clearly show what the video will be about.</div>
-        </div>
-      </article>
-      <article class="w-card w-card-media">
-        <div class="w-media w-media-thumb">
-          <img src="images/YouTube thumbnail 4.png" alt="Philips SPH9500 Review thumbnail">
-        </div>
-        <div class="w-copy">
-          <div class="w-title">Philips SPH9500 Review</div>
-          <div class="w-meta">Review · product review</div>
-          <div class="w-desc">The hook is front-loaded visually so the value proposition lands before the title is ever read.</div>
-        </div>
-      </article>
-      <article class="w-card w-card-media">
-        <div class="w-media w-media-thumb">
-          <img src="images/Thumbnail Idea 1.jpg" alt="Samson Q2U Review thumbnail">
-        </div>
-        <div class="w-copy">
-          <div class="w-title">Samson Q2U Review</div>
-          <div class="w-meta">Audio gear · product review</div>
-          <div class="w-desc">A review of the Samson Q2U — product clarity in the thumbnail was the focus.</div>
-        </div>
-      </article>
-    </div>
-  </div>
-  -->
+  <!-- Thumbnail and Original Music sections are hidden for now; their markup is in git history (commit fb0b3b0) if you want them back. -->
 </section>
-
-<!-- Original Music section hidden for now.
-<div class="rule"></div>
-
-<section class="beats-sec" id="beats">
-  <div class="beats-head appear">
-    <div>
-      <div class="s-tag">Original Music</div>
-      <h2>Example Beats.<br>Different Styles for Different Vibes</h2>
-    </div>
-    <p class="beats-intro">Original music is part of how I build. These tracks show the production side of my workflow and how I shape sound to fit the visual.</p>
-  </div>
-
-  <div class="beats-grid appear">
-    <article class="beat-card">
-      <div class="beat-topline">Beat 01</div>
-      <h3>The Way I Feel</h3>
-      <div class="beat-meta">Mood - Melancholy · Genre - Pop · 130BPM · Key - Fm </div>
-      <p>Track that could be used for background music on a low-key video.</p>
-      <audio controls preload="none">
-        <source src="beats/The Way I Feel (Entire Beat).mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-    </article>
-
-    <article class="beat-card">
-      <div class="beat-topline">Beat 02</div>
-      <h3>Shadow Runner</h3>
-      <div class="beat-meta">Mood - Hyped · Genre - Hip-Hip/Trap · 168BPM · Key - Dm</div>
-      <p>This beat would work well with something that requires a fast beat with boomy bass.</p>
-      <audio controls preload="none">
-        <source src="beats/Shadow Runner.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-    </article>
-
-    <article class="beat-card">
-      <div class="beat-topline">Beat 03</div>
-      <h3>I Want It All</h3>
-      <div class="beat-meta">Mood - Dreamy · Genre - Hip-Hop · 84BPM · Key - D#m</div>
-      <p>Could be used as background music, but could also be used for a more energetic type of video.</p>
-      <audio controls preload="none">
-        <source src="beats/I want it all v2.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-    </article>
-  </div>
-</section>
--->
-
-<div class="rule"></div>
 
 <!-- CASE STUDIES -->
-<section class="cs-sec" id="case-studies">
-  <!-- CASE STUDIES TEXT: section label, heading, and intro -->
-  <div class="s-tag">Case Studies</div>
-  <h2>Proof of<br>Platform</h2>
-  <!-- CASE STUDIES TEXT: top stat cards -->
-  <div class="stats-row appear">
-    <div class="s-cell"><div class="s-num">465<em>K+</em></div><div class="s-lbl">All-Time Views Across Two YouTube Channels</div></div>
-    <div class="s-cell"><div class="s-num">3,000<em>+</em></div><div class="s-lbl">Hours of YouTube Watch Time</div></div>
-    <div class="s-cell"><div class="s-num">161<em>K</em></div><div class="s-lbl">Best Single TikTok — Gaming, 2023</div></div>
-    <div class="s-cell"><div class="s-num">580+</div><div class="s-lbl">Videos Published Across YouTube &amp; TikTok</div></div>
+<section class="sec sec-rule" id="case-studies">
+  <div class="wrap">
+    <div class="sec-head sec-head-split">
+      <div>
+        <div class="label">03 — Case Studies</div>
+        <h2 class="display">Proof of<br>Platform</h2>
+      </div>
+      <p class="sec-intro">Totals show reach. These show the thinking behind it: what each video was for, the choices I made, the numbers it produced, and what I'd change next time.</p>
+    </div>
+
+    <div class="cs-list">
+
+      <!-- CASE STUDY 01 -->
+      <article class="cs reveal">
+        <div class="cs-top">
+          <span class="cs-index">01</span>
+          <div class="cs-heading">
+            <div class="cs-tags"><span>YouTube</span><span>Gaming Channel</span><span>Search</span></div>
+            <h3>Fallout: New Vegas Guide Series</h3>
+            <p class="cs-sum">Short guides for a 2010 game that now carry the channel, driving 30% of its lifetime impressions.</p>
+          </div>
+        </div>
+        <div class="cs-metrics">
+          <div><strong>49.2K</strong><span>Views across 8 guides</span></div>
+          <div><strong>86.6%</strong><span>Views from YouTube search (top guide)</span></div>
+          <div><strong>295</strong><span>Hours watched</span></div>
+          <div><strong>8 of 10</strong><span>Top videos, last 28 days</span></div>
+        </div>
+        <details class="cs-more">
+          <summary><span class="cs-more-open">Read the breakdown</span><span class="cs-more-close">Close</span><span class="cs-plus" aria-hidden="true"></span></summary>
+          <div class="cs-body">
+            <div>
+              <h4>The Goal</h4>
+              <p>Answer the questions players still type into YouTube about an older game, where demand is steady and competition is thin.</p>
+            </div>
+            <div>
+              <h4>The Choices</h4>
+              <p>Each guide answers one question in under 90 seconds. Titles use the player's own words, like "How To Get Caps In Fallout New Vegas," so they match real searches. Once the caps videos landed, I built a series around them: Lucky, reaching the Strip at level 1, and money glitches.</p>
+            </div>
+            <div>
+              <h4>What I Learned</h4>
+              <p>One search win is worth building on. Guides from 2023 still earned 316 of the channel's 421 views from Sep 25 to Oct 22, 2026. Evergreen search content keeps working long after launch week.</p>
+            </div>
+          </div>
+          <div class="cs-table" role="table" aria-label="Top Fallout: New Vegas guides">
+            <div class="cs-row cs-row-head" role="row"><span role="columnheader">Video</span><span role="columnheader">Uploaded</span><span role="columnheader">Views</span></div>
+            <div class="cs-row" role="row"><span role="cell">How To Get Caps In Fallout New Vegas</span><span role="cell">Jul 2023</span><span role="cell">11,740</span></div>
+            <div class="cs-row" role="row"><span role="cell">How to Get Unlimited Caps in Fallout New Vegas</span><span role="cell">May 2025</span><span role="cell">8,735</span></div>
+            <div class="cs-row" role="row"><span role="cell">Use a stealth boy to steal everything in Fallout New Vegas!</span><span role="cell">Aug 2023</span><span role="cell">8,161</span></div>
+          </div>
+        </details>
+        <a class="link-arrow" href="https://www.youtube.com/watch?v=0ZI9ISLcGKY" target="_blank" rel="noopener noreferrer">Watch the Caps Guide on YouTube</a>
+      </article>
+
+      <!-- CASE STUDY 02 -->
+      <article class="cs reveal">
+        <div class="cs-top">
+          <span class="cs-index">02</span>
+          <div class="cs-heading">
+            <div class="cs-tags"><span>TikTok</span><span>Gaming</span><span>Cross-Posting</span></div>
+            <h3>Taking the Caps Guide to TikTok</h3>
+            <p class="cs-sum">The same Fallout: New Vegas caps guide reached 161K views on TikTok, nearly 14&times; its YouTube views, and logged a third as much watch time as the entire YouTube channel.</p>
+          </div>
+        </div>
+        <div class="cs-metrics">
+          <div><strong>161K</strong><span>Views on one TikTok</span></div>
+          <div><strong>803</strong><span>Hours watched</span></div>
+          <div><strong>2,576</strong><span>Saves</span></div>
+          <div><strong>91.2%</strong><span>Views from TikTok search</span></div>
+        </div>
+        <details class="cs-more">
+          <summary><span class="cs-more-open">Read the breakdown</span><span class="cs-more-close">Close</span><span class="cs-plus" aria-hidden="true"></span></summary>
+          <div class="cs-body">
+            <div>
+              <h4>The Goal</h4>
+              <p>Get more out of a guide that was already working on YouTube by putting it in front of a second audience.</p>
+            </div>
+            <div>
+              <h4>The Choices</h4>
+              <p>I record once and post the same video to both platforms, because their search behaves similarly. What changes is the packaging: a title, description, and hashtags written for each platform's audience. It paid off: the top TikTok queries were "fallout new vegas" and "fallout new vegas tips." When a commenter asked for more, I replied with a stealth boy follow-up, which reached 17K views.</p>
+            </div>
+            <div>
+              <h4>What I Learned</h4>
+              <p>Where a video wins depends on how people find it. The 2023 search guides grew far larger on TikTok, while the 2025 Unlimited Caps guide did better on YouTube. The 2,576 saves show viewers bookmarking it as a reference.</p>
+            </div>
+          </div>
+          <div class="cs-table" role="table" aria-label="YouTube versus TikTok views">
+            <div class="cs-row cs-row-4 cs-row-head" role="row"><span role="columnheader">Video</span><span role="columnheader">YouTube</span><span role="columnheader">TikTok</span><span role="columnheader">TikTok source</span></div>
+            <div class="cs-row cs-row-4" role="row"><span role="cell">How to get caps (Fallout NV)</span><span role="cell">11,740</span><span role="cell">161K</span><span role="cell">Search 91.2%</span></div>
+            <div class="cs-row cs-row-4" role="row"><span role="cell">Stealth boy guide (Fallout NV)</span><span role="cell">8,161</span><span role="cell">17K</span><span role="cell">Search 69.2%</span></div>
+            <div class="cs-row cs-row-4" role="row"><span role="cell">Unlimited caps (Fallout NV)</span><span role="cell">8,735</span><span role="cell">3,430</span><span role="cell">&mdash;</span></div>
+          </div>
+        </details>
+        <a class="link-arrow" href="https://www.tiktok.com/@thecursingginger/video/7260364720480308523" target="_blank" rel="noopener noreferrer">Watch on TikTok</a>
+      </article>
+
+      <!-- CASE STUDY 03 -->
+      <article class="cs reveal">
+        <div class="cs-top">
+          <span class="cs-index">03</span>
+          <div class="cs-heading">
+            <div class="cs-tags"><span>YouTube</span><span>Byrne Beats</span><span>Review</span></div>
+            <h3>The BEST Open-Back Headphones Under $100!</h3>
+            <p class="cs-sum">A single 6:06 review that produced 23% of the channel's lifetime watch time and is still its top video 18 months later.</p>
+          </div>
+        </div>
+        <div class="cs-metrics">
+          <div><strong>7.6%</strong><span>Click-through (channel avg. 4.5%)</span></div>
+          <div><strong>82.8%</strong><span>Views from YouTube search</span></div>
+          <div><strong>6,514</strong><span>Views, 138 hours watched</span></div>
+          <div><strong>94.6%</strong><span>Like ratio</span></div>
+        </div>
+        <details class="cs-more">
+          <summary><span class="cs-more-open">Read the breakdown</span><span class="cs-more-close">Close</span><span class="cs-plus" aria-hidden="true"></span></summary>
+          <div class="cs-body">
+            <div>
+              <h4>The Goal</h4>
+              <p>Answer a buying question people type into YouTube: which budget open-back headphones are worth it.</p>
+            </div>
+            <div>
+              <h4>The Choices</h4>
+              <p>The title and "BUDGET KING" thumbnail match buying-intent searches like "best open back headphones" and "best headphones under 100." That match is why click-through runs 3.1 points above the channel average.</p>
+            </div>
+            <div>
+              <h4>What I Learned</h4>
+              <p>It's still growing, with 862 views from Sep 25 to Oct 22, 2026, about 2.5&times; its lifetime pace. But viewers watch 25% on average, and the end screen gets no clicks. Next time: chapters for each headphone, a faster first verdict, and an end screen pointing to a related video.</p>
+            </div>
+          </div>
+        </details>
+        <a class="link-arrow" href="https://www.youtube.com/watch?v=j5l468nRKFY" target="_blank" rel="noopener noreferrer">Watch on YouTube</a>
+      </article>
+
+    </div>
+    <p class="cs-source">Data from YouTube Studio and TikTok Studio, lifetime through Oct 22, 2026.</p>
   </div>
-  <p class="cs-intro appear">Totals show reach. These show the thinking behind it: what each video was for, the choices I made, the numbers it produced, and what I'd change next time.</p>
-
-  <div class="cs-list">
-
-    <!-- CASE STUDY 01 -->
-    <article class="cs-card appear">
-      <div class="cs-head">
-        <div class="cs-kicker">Case Study 01 &middot; YouTube &middot; Gaming Channel &middot; Search</div>
-        <h3 class="cs-title">Fallout: New Vegas Guide Series</h3>
-        <p class="cs-sum">Short guides for a 2010 game that now carry the channel, driving 30% of its lifetime impressions.</p>
-      </div>
-      <div class="cs-metrics">
-        <div class="cs-metric"><div class="cs-num">49.2K</div><div class="cs-lbl">Views across 8 guides</div></div>
-        <div class="cs-metric"><div class="cs-num">86.6%</div><div class="cs-lbl">Views from YouTube search (top guide)</div></div>
-        <div class="cs-metric"><div class="cs-num">295</div><div class="cs-lbl">Hours watched</div></div>
-        <div class="cs-metric"><div class="cs-num">8 of 10</div><div class="cs-lbl">Top videos, last 28 days</div></div>
-      </div>
-      <div class="cs-body">
-        <div>
-          <div class="cs-h">The Goal</div>
-          <p>Answer the questions players still type into YouTube about an older game, where demand is steady and competition is thin.</p>
-        </div>
-        <div>
-          <div class="cs-h">The Choices</div>
-          <p>Each guide answers one question in under 90 seconds. Titles use the player's own words, like "How To Get Caps In Fallout New Vegas," so they match real searches. Once the caps videos landed, I built a series around them: Lucky, reaching the Strip at level 1, and money glitches.</p>
-        </div>
-        <div>
-          <div class="cs-h">What I Learned</div>
-          <p>One search win is worth building on. Guides from 2023 still earned 316 of the channel's 421 views from Sep 25 to Oct 22, 2026. Evergreen search content keeps working long after launch week.</p>
-        </div>
-      </div>
-      <div class="cs-table">
-        <div class="cs-row cs-row-head"><span>Video</span><span>Uploaded</span><span>Views</span></div>
-        <div class="cs-row"><span>How To Get Caps In Fallout New Vegas</span><span>Jul 2023</span><span>11,740</span></div>
-        <div class="cs-row"><span>How to Get Unlimited Caps in Fallout New Vegas</span><span>May 2025</span><span>8,735</span></div>
-        <div class="cs-row"><span>Use a stealth boy to steal everything in Fallout New Vegas!</span><span>Aug 2023</span><span>8,161</span></div>
-      </div>
-      <div class="cs-foot">
-        <a class="w-action" href="https://www.youtube.com/watch?v=0ZI9ISLcGKY" target="_blank" rel="noopener noreferrer">Watch the Caps Guide on YouTube</a>
-      </div>
-    </article>
-
-    <!-- CASE STUDY 02 -->
-    <article class="cs-card appear">
-      <div class="cs-head">
-        <div class="cs-kicker">Case Study 02 &middot; TikTok &middot; Gaming &middot; Cross-Posting</div>
-        <h3 class="cs-title">Taking the Caps Guide to TikTok</h3>
-        <p class="cs-sum">The same Fallout: New Vegas caps guide reached 161K views on TikTok, nearly 14&times; its YouTube views, and logged a third as much watch time as the entire YouTube channel.</p>
-      </div>
-      <div class="cs-metrics">
-        <div class="cs-metric"><div class="cs-num">161K</div><div class="cs-lbl">Views on one TikTok</div></div>
-        <div class="cs-metric"><div class="cs-num">803</div><div class="cs-lbl">Hours watched</div></div>
-        <div class="cs-metric"><div class="cs-num">2,576</div><div class="cs-lbl">Saves</div></div>
-        <div class="cs-metric"><div class="cs-num">91.2%</div><div class="cs-lbl">Views from TikTok search</div></div>
-      </div>
-      <div class="cs-body">
-        <div>
-          <div class="cs-h">The Goal</div>
-          <p>Get more out of a guide that was already working on YouTube by putting it in front of a second audience.</p>
-        </div>
-        <div>
-          <div class="cs-h">The Choices</div>
-          <p>I record once and post the same video to both platforms, because their search behaves similarly. What changes is the packaging: a title, description, and hashtags written for each platform's audience. It paid off: the top TikTok queries were "fallout new vegas" and "fallout new vegas tips." When a commenter asked for more, I replied with a stealth boy follow-up, which reached 17K views.</p>
-        </div>
-        <div>
-          <div class="cs-h">What I Learned</div>
-          <p>Where a video wins depends on how people find it. The 2023 search guides grew far larger on TikTok, while the 2025 Unlimited Caps guide did better on YouTube. The 2,576 saves show viewers bookmarking it as a reference.</p>
-        </div>
-      </div>
-      <div class="cs-table">
-        <div class="cs-row cs-row-4 cs-row-head"><span>Video</span><span>YouTube</span><span>TikTok</span><span>TikTok source</span></div>
-        <div class="cs-row cs-row-4"><span>How to get caps (Fallout NV)</span><span>11,740</span><span>161K</span><span>Search 91.2%</span></div>
-        <div class="cs-row cs-row-4"><span>Stealth boy guide (Fallout NV)</span><span>8,161</span><span>17K</span><span>Search 69.2%</span></div>
-        <div class="cs-row cs-row-4"><span>Unlimited caps (Fallout NV)</span><span>8,735</span><span>3,430</span><span>&mdash;</span></div>
-      </div>
-      <div class="cs-foot">
-        <a class="w-action" href="https://www.tiktok.com/@thecursingginger/video/7260364720480308523" target="_blank" rel="noopener noreferrer">Watch on TikTok</a>
-      </div>
-    </article>
-
-    <!-- CASE STUDY 03 -->
-    <article class="cs-card appear">
-      <div class="cs-head">
-        <div class="cs-kicker">Case Study 03 &middot; YouTube &middot; Byrne Beats &middot; Review</div>
-        <h3 class="cs-title">The BEST Open-Back Headphones Under $100!</h3>
-        <p class="cs-sum">A single 6:06 review that produced 23% of the channel's lifetime watch time and is still its top video 18 months later.</p>
-      </div>
-      <div class="cs-metrics">
-        <div class="cs-metric"><div class="cs-num">7.6%</div><div class="cs-lbl">Click-through (channel avg. 4.5%)</div></div>
-        <div class="cs-metric"><div class="cs-num">82.8%</div><div class="cs-lbl">Views from YouTube search</div></div>
-        <div class="cs-metric"><div class="cs-num">6,514</div><div class="cs-lbl">Views, 138 hours watched</div></div>
-        <div class="cs-metric"><div class="cs-num">94.6%</div><div class="cs-lbl">Like ratio</div></div>
-      </div>
-      <div class="cs-body">
-        <div>
-          <div class="cs-h">The Goal</div>
-          <p>Answer a buying question people type into YouTube: which budget open-back headphones are worth it.</p>
-        </div>
-        <div>
-          <div class="cs-h">The Choices</div>
-          <p>The title and "BUDGET KING" thumbnail match buying-intent searches like "best open back headphones" and "best headphones under 100." That match is why click-through runs 3.1 points above the channel average.</p>
-        </div>
-        <div>
-          <div class="cs-h">What I Learned</div>
-          <p>It's still growing, with 862 views from Sep 25 to Oct 22, 2026, about 2.5&times; its lifetime pace. But viewers watch 25% on average, and the end screen gets no clicks. Next time: chapters for each headphone, a faster first verdict, and an end screen pointing to a related video.</p>
-        </div>
-      </div>
-      <div class="cs-foot">
-        <a class="w-action" href="https://www.youtube.com/watch?v=j5l468nRKFY" target="_blank" rel="noopener noreferrer">Watch on YouTube</a>
-      </div>
-    </article>
-
-  </div>
-  <p class="cs-source">Data from YouTube Studio and TikTok Studio, lifetime through Oct 22, 2026.</p>
 </section>
 
-<div class="rule"></div>
+<!-- ABOUT -->
+<section class="sec sec-rule" id="about">
+  <div class="wrap about-grid">
+    <div>
+      <div class="label">04 — About</div>
+      <h2 class="display">Builder.<br>Creator.<br><span class="accent">Obsessive.</span></h2>
+    </div>
+    <div class="about-body reveal">
+      <p class="about-lead">I'm a creator who loves making things. Whether that's producing a beat in FL Studio, editing a video in DaVinci Resolve, or building a piece of software — creating is where I spend most of my time.</p>
+      <p>My content spans tutorials, product demos, and talking head videos about topics I'm genuinely into. I have 465K+ all-time views across two YouTube channels, where I've published 56 full-length videos alongside Shorts, and 100K+ TikTok views in the past year across two accounts.</p>
+      <p>I have an Associate's degree in Software Development, and I'm pursuing a Bachelor of Science (B.S.) in Digital Content Creation at Dakota State University — which means I think about content technically as well as creatively. I understand hooks, retention curves, and platform analytics, not just aesthetics.</p>
+      <p>Outside of work and school: I make my own social media content, make beats, read books, play video games (anybody else ready for GTA VI?), and occasionally do photography.</p>
+
+      <dl class="credits">
+        <div><dt>Education</dt><dd>B.S. Digital Content Creation, Dakota State University <em>(in progress)</em></dd></div>
+        <div><dt></dt><dd>A.S. Software Development</dd></div>
+        <div><dt>Client</dt><dd>Lawrence &amp; Schiller <em>— freelance UGC</em></dd></div>
+        <div><dt>Channels</dt><dd>Two YouTube channels, two TikTok accounts</dd></div>
+        <div><dt>Kit</dt><dd>DaVinci Resolve, FL Studio, OBS, GIMP, Canva, camera + lighting</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
 
 <!-- CONNECT -->
-<section class="connect-sec" id="connect">
-  <!-- CONNECT TEXT: section label, heading, and intro paragraph -->
-  <div class="s-tag">Get In Touch</div>
-  <h2>Let's Work<br>Together</h2>
-  <p class="c-lead">Open to social media, video, and content roles in Sioux Falls.</p>
-  <div class="c-links">
-    <!-- CONNECT TEXT: contact link labels -->
-    <a href="https://www.linkedin.com/in/calebbyrne/" target="_blank" rel="noopener noreferrer" class="c-link primary">
-      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-      LinkedIn
-    </a>
-    <a href="https://www.youtube.com/@byrnebeatswastaken" target="_blank" rel="noopener noreferrer" class="c-link">
-      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.95C18.88 4 12 4 12 4s-6.88 0-8.59.47A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#070a0f"/></svg>
-      YouTube
-    </a>
-    <a href="https://www.tiktok.com/@byrnebeatswastaken?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" class="c-link">
-      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.77.39 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-6.34 6.29 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.73a4.85 4.85 0 0 1-1.01-.04z"/></svg>
-      TikTok
-    </a>
-    <div class="c-email-card">
-      <!-- EMAIL CONTACT TEXT: email label, address, helper copy, and action labels -->
-      <div class="c-email-label">Email</div>
-      <div class="c-email-address">calebbyrne2@gmail.com</div>
-      <div class="c-email-actions">
-        <button class="c-email-action is-primary" type="button" data-email-action="copy" aria-live="polite">Copy Email</button>
-        <a class="c-email-action" href="mailto:calebbyrne2@gmail.com">Email Me</a>
-      </div>
+<section class="connect" id="connect">
+  <div class="wrap">
+    <div class="label">05 — Get In Touch</div>
+    <h2 class="connect-title">Let's Work<br><span class="accent">Together.</span></h2>
+    <p class="connect-lead">Open to social media, video, and content roles in Sioux Falls.</p>
+
+    <div class="connect-email">
+      <a class="connect-email-addr" href="mailto:calebbyrne2@gmail.com">calebbyrne2@gmail.com</a>
+      <button class="btn btn-line btn-sm" type="button" data-email-action="copy" aria-live="polite">Copy Email</button>
     </div>
+
+    <ul class="socials">
+      <li><a href="https://www.linkedin.com/in/calebbyrne/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></li>
+      <li><a href="https://www.youtube.com/@byrnebeatswastaken" target="_blank" rel="noopener noreferrer">YouTube <span aria-hidden="true">↗</span></a></li>
+      <li><a href="https://www.tiktok.com/@byrnebeatswastaken?is_from_webapp=1&amp;sender_device=pc" target="_blank" rel="noopener noreferrer">TikTok <span aria-hidden="true">↗</span></a></li>
+    </ul>
   </div>
 </section>
 
 </main>
 
 <!-- FOOTER -->
-<footer>
-  <!-- FOOTER TEXT: footer brand and contact links -->
-  <div class="f-brand">
-    <div class="f-mark">Caleb <em>Byrne</em></div>
-    <div class="f-legal">&copy; <span data-current-year>2026</span> Caleb Byrne &middot; Digital Content Production</div>
-  </div>
-  <div class="f-links" role="navigation" aria-label="Footer contact links">
-    <a href="https://www.linkedin.com/in/calebbyrne/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-    <a href="mailto:calebbyrne2@gmail.com">Email</a>
-    <a href="freelance.html">Freelance</a>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-row">
+      <nav class="footer-links" aria-label="Footer">
+        <a href="https://www.linkedin.com/in/calebbyrne/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:calebbyrne2@gmail.com">Email</a>
+        <a href="freelance.html">Freelance</a>
+        <a href="#top">Back to top ↑</a>
+      </nav>
+      <div class="footer-legal">&copy; <span data-current-year>2026</span> Caleb Byrne · Digital Content Production</div>
+    </div>
+    <div class="footer-mark" aria-hidden="true">Caleb Byrne</div>
   </div>
 </footer>
 
-<script>
-  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  const emailAddress = 'calebbyrne2@gmail.com';
-  const siteNav = document.querySelector('nav');
-  const navToggle = document.querySelector('.nav-toggle');
-  const navLinks = document.querySelector('.nav-links');
-  const navLinkAnchors = Array.from(document.querySelectorAll('.nav-links a'));
-  const emailCopyButton = document.querySelector('[data-email-action="copy"]');
-
-  document.querySelectorAll('[data-current-year]').forEach((el) => {
-    el.textContent = String(new Date().getFullYear());
-  });
-
-  function closeMobileNav() {
-    if (!navToggle || !navLinks) return;
-    navToggle.setAttribute('aria-expanded', 'false');
-    navToggle.setAttribute('aria-label', 'Open navigation');
-    navLinks.classList.remove('is-open');
-    document.body.classList.remove('nav-open');
-  }
-
-  if (navToggle && navLinks) {
-    navToggle.addEventListener('click', () => {
-      const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
-      navToggle.setAttribute('aria-expanded', String(!isOpen));
-      navToggle.setAttribute('aria-label', isOpen ? 'Open navigation' : 'Close navigation');
-      navLinks.classList.toggle('is-open', !isOpen);
-      document.body.classList.toggle('nav-open', !isOpen);
-    });
-
-    navLinkAnchors.forEach((link) => {
-      link.addEventListener('click', closeMobileNav);
-    });
-
-    document.addEventListener('keydown', (event) => {
-      if (event.key !== 'Escape') return;
-      if (navToggle.getAttribute('aria-expanded') !== 'true') return;
-      closeMobileNav();
-      navToggle.focus();
-    });
-
-    document.addEventListener('click', (event) => {
-      if (navToggle.getAttribute('aria-expanded') !== 'true') return;
-      if (siteNav && !siteNav.contains(event.target)) closeMobileNav();
-    });
-
-    window.addEventListener('resize', () => {
-      if (window.innerWidth > 580) closeMobileNav();
-    });
-  }
-
-  if (emailCopyButton) {
-    const copyLabel = emailCopyButton.textContent;
-    let copyResetTimer = null;
-
-    emailCopyButton.addEventListener('click', async () => {
-      try {
-        await navigator.clipboard.writeText(emailAddress);
-        emailCopyButton.textContent = 'Email copied';
-      } catch (error) {
-        window.prompt('Copy this email address:', emailAddress);
-      }
-
-      window.clearTimeout(copyResetTimer);
-      copyResetTimer = window.setTimeout(() => {
-        emailCopyButton.textContent = copyLabel;
-      }, 1800);
-    });
-  }
-
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach((e, i) => {
-      if (e.isIntersecting) {
-        setTimeout(() => e.target.classList.add('in'), i * 60);
-        io.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.08 });
-  document.querySelectorAll('.appear').forEach(el => io.observe(el));
-
-  // Hero intro: count the snapshot stats up as the card lands, and let any input skip to the finished hero
-  if (document.documentElement.classList.contains('intro')) {
-    const introStats = Array.from(document.querySelectorAll('.hero-proof-stat strong'))
-      .map((el) => {
-        const match = el.textContent.match(/^(\d+)(.*)$/);
-        return match ? { el, final: el.textContent, value: Number(match[1]), suffix: match[2] } : null;
-      })
-      .filter(Boolean);
-    const timecode = document.querySelector('.hi-timecode span');
-    const skipEvents = ['pointerdown', 'keydown', 'wheel', 'touchstart'];
-    let countFrame = null;
-    let timecodeFrame = null;
-    let countTimer = null;
-    let finishTimer = null;
-
-    function finishIntro() {
-      if (!document.documentElement.classList.contains('intro')) return;
-      document.documentElement.classList.remove('intro');
-      window.cancelAnimationFrame(countFrame);
-      window.cancelAnimationFrame(timecodeFrame);
-      window.clearTimeout(countTimer);
-      window.clearTimeout(finishTimer);
-      introStats.forEach((stat) => { stat.el.textContent = stat.final; });
-      skipEvents.forEach((type) => window.removeEventListener(type, finishIntro));
-    }
-
-    // The 1.2s playhead sweep reads as five seconds of footage at 24fps
-    function runTimecode(now, start = now) {
-      const t = Math.min((now - start) / 1200, 1);
-      const frames = Math.round(t * 5 * 24);
-      const pad = (n) => String(n).padStart(2, '0');
-      if (timecode) timecode.textContent = `00:00:${pad(Math.floor(frames / 24))}:${pad(frames % 24)}`;
-      if (t < 1) timecodeFrame = window.requestAnimationFrame((next) => runTimecode(next, start));
-    }
-
-    function countStats(now, start = now) {
-      const t = Math.min((now - start) / 800, 1);
-      const eased = 1 - Math.pow(1 - t, 3);
-      introStats.forEach((stat) => { stat.el.textContent = `${Math.round(stat.value * eased)}${stat.suffix}`; });
-      if (t < 1) countFrame = window.requestAnimationFrame((next) => countStats(next, start));
-    }
-
-    introStats.forEach((stat) => { stat.el.textContent = `0${stat.suffix}`; });
-    window.setTimeout(() => { timecodeFrame = window.requestAnimationFrame(runTimecode); }, 600);
-    countTimer = window.setTimeout(() => { countFrame = window.requestAnimationFrame(countStats); }, 1900);
-    finishTimer = window.setTimeout(finishIntro, 3000);
-    skipEvents.forEach((type) => window.addEventListener(type, finishIntro, { passive: true }));
-  }
-
-  const hero = document.querySelector('.hero');
-  const heroWord = document.querySelector('.hero-bg-word');
-  const heroParticles = document.querySelector('.hero-particles');
-  const pipelineBar = document.querySelector('.pipeline-bar');
-  const pipelineSteps = Array.from(document.querySelectorAll('.pipeline-steps .ps'));
-  const pipelineArrows = Array.from(document.querySelectorAll('.pipeline-steps .pa'));
-
-  // Nav links paired with the section each one points at, for scroll-spy highlighting
-  const navTargets = navLinkAnchors
-    .map((link) => {
-      const href = link.getAttribute('href') || '';
-      const section = href.startsWith('#') ? document.querySelector(href) : null;
-      return section ? { link, section } : null;
-    })
-    .filter(Boolean);
-
-  function updateHeroMotion() {
-    if (!hero || !heroWord || reduceMotion) return;
-    const rect = hero.getBoundingClientRect();
-    const heroHeight = Math.max(rect.height, 1);
-    const progress = Math.min(Math.max(-rect.top / heroHeight, 0), 1);
-    // Written as custom properties so the idle float animation can layer on top
-    heroWord.style.setProperty('--hw-y', `${-55 - progress * 14}%`);
-    heroWord.style.setProperty('--hw-scale', `${1 + progress * 0.12}`);
-    heroWord.style.opacity = `${Math.max(0.5 - progress * 0.16, 0.24)}`;
-  }
-
-  function updateNavState() {
-    const scrolled = window.scrollY;
-
-    if (siteNav) siteNav.classList.toggle('is-scrolled', scrolled > 24);
-
-    const scrollable = document.documentElement.scrollHeight - window.innerHeight;
-    const ratio = scrollable > 0 ? Math.min(Math.max(scrolled / scrollable, 0), 1) : 0;
-    document.documentElement.style.setProperty('--scroll-progress', ratio.toFixed(4));
-
-    if (!navTargets.length) return;
-    const marker = scrolled + window.innerHeight * 0.3;
-    const atBottom = scrollable > 0 && scrolled >= scrollable - 4;
-    let active = null;
-    navTargets.forEach((target) => {
-      if (target.section.offsetTop <= marker) active = target;
-    });
-    if (atBottom) active = navTargets[navTargets.length - 1];
-
-    navTargets.forEach((target) => {
-      const isActive = target === active;
-      target.link.classList.toggle('is-active', isActive);
-      if (isActive) {
-        target.link.setAttribute('aria-current', 'true');
-      } else {
-        target.link.removeAttribute('aria-current');
-      }
-    });
-  }
-
-  let scrollFrame = null;
-  function onScroll() {
-    if (scrollFrame !== null) return;
-    scrollFrame = window.requestAnimationFrame(() => {
-      scrollFrame = null;
-      updateHeroMotion();
-      updateNavState();
-    });
-  }
-
-  onScroll();
-  window.addEventListener('scroll', onScroll, { passive: true });
-  window.addEventListener('resize', onScroll);
-
-  if (hero && heroParticles && !reduceMotion) {
-    const particleConfig = [
-      { x: 10, y: 72, size: 5, depth: 10, delay: '0s', duration: '9s', glow: 'ember', driftX: 10, driftY: -32, blur: 0 },
-      { x: 16, y: 48, size: 8, depth: 16, delay: '-2.4s', duration: '11s', glow: 'fire', driftX: 16, driftY: -46, blur: 0.3 },
-      { x: 21, y: 80, size: 4, depth: 8, delay: '-1s', duration: '8.5s', glow: 'ember', driftX: 8, driftY: -24, blur: 0 },
-      { x: 27, y: 34, size: 10, depth: 18, delay: '-4s', duration: '12s', glow: 'gold', driftX: -10, driftY: -38, blur: 0.4 },
-      { x: 31, y: 66, size: 6, depth: 12, delay: '-3.2s', duration: '9.8s', glow: 'fire', driftX: 12, driftY: -34, blur: 0.1 },
-      { x: 36, y: 18, size: 12, depth: 22, delay: '-6s', duration: '13s', glow: 'fire', driftX: 18, driftY: -42, blur: 0.5 },
-      { x: 41, y: 58, size: 5, depth: 10, delay: '-1.8s', duration: '8.9s', glow: 'ember', driftX: 7, driftY: -28, blur: 0 },
-      { x: 46, y: 76, size: 7, depth: 15, delay: '-5.2s', duration: '10.5s', glow: 'gold', driftX: -6, driftY: -30, blur: 0.2 },
-      { x: 52, y: 24, size: 11, depth: 24, delay: '-2.8s', duration: '12.8s', glow: 'fire', driftX: -14, driftY: -48, blur: 0.4 },
-      { x: 57, y: 68, size: 4, depth: 8, delay: '-4.6s', duration: '8.1s', glow: 'ember', driftX: 6, driftY: -22, blur: 0 },
-      { x: 61, y: 40, size: 9, depth: 20, delay: '-7s', duration: '11.4s', glow: 'gold', driftX: 11, driftY: -40, blur: 0.3 },
-      { x: 66, y: 82, size: 5, depth: 9, delay: '-2s', duration: '9.1s', glow: 'ember', driftX: -8, driftY: -26, blur: 0 },
-      { x: 71, y: 30, size: 13, depth: 28, delay: '-3.8s', duration: '13.5s', glow: 'fire', driftX: 20, driftY: -52, blur: 0.6 },
-      { x: 76, y: 62, size: 7, depth: 15, delay: '-6.2s', duration: '10.2s', glow: 'gold', driftX: -9, driftY: -34, blur: 0.2 },
-      { x: 82, y: 44, size: 10, depth: 19, delay: '-1.5s', duration: '11.6s', glow: 'fire', driftX: 12, driftY: -38, blur: 0.3 },
-      { x: 88, y: 74, size: 4, depth: 8, delay: '-5.5s', duration: '8.7s', glow: 'ember', driftX: 6, driftY: -20, blur: 0 },
-      { x: 92, y: 28, size: 8, depth: 17, delay: '-4.1s', duration: '10.8s', glow: 'gold', driftX: -12, driftY: -36, blur: 0.3 },
-      { x: 24, y: 92, size: 14, depth: 30, delay: '-2.7s', duration: '14s', glow: 'smoke', driftX: 18, driftY: -56, blur: 1.2 },
-      { x: 63, y: 94, size: 16, depth: 34, delay: '-7.4s', duration: '15.5s', glow: 'smoke', driftX: -14, driftY: -60, blur: 1.4 },
-      { x: 79, y: 90, size: 12, depth: 26, delay: '-3.1s', duration: '13.2s', glow: 'smoke', driftX: 10, driftY: -44, blur: 1.1 }
-    ];
-
-    particleConfig.forEach((particle, index) => {
-      const el = document.createElement('span');
-      el.className = `hero-particle${index % 4 === 0 ? ' follow' : ''}`;
-      el.style.setProperty('--x', `${particle.x}%`);
-      el.style.setProperty('--y', `${particle.y}%`);
-      el.style.setProperty('--size', `${particle.size}px`);
-      el.style.setProperty('--depth', `${particle.depth}px`);
-      el.style.setProperty('--delay', particle.delay);
-      el.style.setProperty('--duration', particle.duration);
-      el.style.setProperty('--drift-x', `${particle.driftX}px`);
-      el.style.setProperty('--drift-y', `${particle.driftY}px`);
-      el.style.setProperty('--blur', `${particle.blur}px`);
-      el.style.setProperty('--mouse-factor', `${index % 4 === 0 ? 0.28 : 0.12}`);
-      el.dataset.glow = particle.glow;
-      heroParticles.appendChild(el);
-    });
-
-    hero.addEventListener('mousemove', (event) => {
-      const rect = hero.getBoundingClientRect();
-      const mouseX = ((event.clientX - rect.left) / rect.width - 0.5) * 2;
-      const mouseY = ((event.clientY - rect.top) / rect.height - 0.5) * 2;
-      hero.style.setProperty('--mouse-x', mouseX.toFixed(3));
-      hero.style.setProperty('--mouse-y', mouseY.toFixed(3));
-    });
-
-    hero.addEventListener('mouseleave', () => {
-      hero.style.setProperty('--mouse-x', '0');
-      hero.style.setProperty('--mouse-y', '0');
-    });
-  }
-
-  let pipelineIndex = 0;
-  let pipelineTimer = null;
-
-  function stopPipelineMotion() {
-    if (pipelineTimer) {
-      window.clearInterval(pipelineTimer);
-      pipelineTimer = null;
-    }
-  }
-
-  function runPipelineMotion() {
-    pipelineSteps.forEach((step, index) => {
-      step.classList.toggle('is-live', index === pipelineIndex);
-    });
-
-    pipelineArrows.forEach((arrow, index) => {
-      arrow.classList.toggle('is-live', index === pipelineIndex || index === pipelineIndex - 1);
-    });
-
-    pipelineIndex = (pipelineIndex + 1) % pipelineSteps.length;
-  }
-
-  function startPipelineMotion() {
-    if (!pipelineSteps.length || pipelineTimer || document.hidden) return;
-    runPipelineMotion();
-    pipelineTimer = window.setInterval(runPipelineMotion, 950);
-  }
-
-  if (pipelineBar && pipelineSteps.length && !reduceMotion) {
-    const pipelineObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.target !== pipelineBar) return;
-        if (entry.isIntersecting) {
-          startPipelineMotion();
-        } else {
-          stopPipelineMotion();
-        }
-      });
-    }, { threshold: 0.35 });
-
-    pipelineObserver.observe(pipelineBar);
-
-    document.addEventListener('visibilitychange', () => {
-      if (document.hidden) {
-        stopPipelineMotion();
-      } else {
-        const rect = pipelineBar.getBoundingClientRect();
-        const isVisible = rect.top < window.innerHeight * 0.85 && rect.bottom > window.innerHeight * 0.15;
-        if (isVisible) startPipelineMotion();
-      }
-    });
-  }
-</script>
+<script src="site.js"></script>
 </body>
 </html>
